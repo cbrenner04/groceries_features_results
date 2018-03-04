@@ -1,24 +1,26 @@
-# README
+# groceries_features_results
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For posting and viewing results of
+[groceries_features](https://github.com/cbrenner04/groceries_features)
 
-Things you may want to cover:
+## API use
 
-* Ruby version
+```ruby
+require 'rest-client'
+require 'json'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+response = RestClient.post(
+  'http://localhost:3000/api/sign-in.json',
+  user_login: { email: 'foo@ex.co', password: 'asdfasdf' }
+)
+auth_token = JSON.parse(response.body)['auth_token']
+response = RestClient.get(
+  'http://localhost:3000/api/home.json',
+  { 'Authorization' => "Token token=#{auth_token}" }
+)
+response.body => 'Hello, World!'
+RestClient.delete(
+  'http://localhost:3000/api/sign-out.json',
+  { 'Authorization' => "Token token=#{auth_token}" }
+)
+```
