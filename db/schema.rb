@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180304210637) do
     t.float "duration", null: false
     t.string "exception"
     t.boolean "passed", null: false
+    t.string "environment", default: "development", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["feature_id"], name: "index_results_on_feature_id"

@@ -4,6 +4,7 @@
 class Result < ApplicationRecord
   belongs_to :feature
 
-  validates :feature, :duration, presence: true
+  validates :feature, :duration, :environment, presence: true
   validates :passed, inclusion: { in: [true, false] }
+  scope :passing, (-> { where(passed: true) })
 end

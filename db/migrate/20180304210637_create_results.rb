@@ -5,6 +5,7 @@ class CreateResults < ActiveRecord::Migration[5.1]
       t.float :duration, null: false
       t.string :exception
       t.boolean :passed, null: false
+      t.string :environment, null: false, default: 'development'
 
       t.timestamps
     end

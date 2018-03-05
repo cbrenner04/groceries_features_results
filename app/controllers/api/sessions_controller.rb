@@ -7,11 +7,11 @@ module Api
 
     def create
       resource = User.find_for_database_authentication(
-        email: params[:user_login][:email]
+        email: login_params[:email]
       )
       resource ||= User.new
 
-      if resource.valid_password?(params[:user_login][:password])
+      if resource.valid_password?(login_params[:password])
         auth_token = resource.generate_auth_token
         render json: { auth_token: auth_token }
       else
@@ -26,6 +26,10 @@ module Api
     end
 
     private
+
+    def login_params
+      params.require(:user_login).permit(:email, :password)
+    end
 
     def invalid_login_attempt
       render json: {
