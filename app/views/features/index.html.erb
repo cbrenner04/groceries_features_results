@@ -1,1 +1,16 @@
-<%= render @features %>
+<h1>Features</h1>
+<%= link_to "Back to Home", root_path %>
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>RSpec ID</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Last Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @features %>
+  </tbody>
+</table>

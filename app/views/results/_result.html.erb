@@ -1,3 +1,7 @@
-<div>
-  <%= result.id %> | <%= result.feature.rspec_id %> | <%= result.duration %> | <%= result.exception || 'N/A' %> | <%= result.passed %> | <%= result.created_at.to_formatted_s(:long) %>
-</div>
+<tr style="text-align: center">
+  <td><%= result.created_at.to_formatted_s(:long) %></td>
+  <td><%= result.duration %></td>
+  <td><%= result.exception || 'N/A' %></td>
+  <td><%= result.passed %></td>
+  <td><%= result.environment %></td>
+</tr>

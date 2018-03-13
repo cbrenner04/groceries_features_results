@@ -1,0 +1,8 @@
+<h1>Test Runs</h1>
+<%= link_to "Back to Home", root_path %>
+
+<% @test_runs.each do |test_run| %>
+  <div>
+    <%= link_to test_run, test_run_path(test_run) %>
+  </div>
+<% end %>

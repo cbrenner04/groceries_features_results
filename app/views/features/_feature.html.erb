@@ -1,4 +1,6 @@
-<div>
-  <%= link_to feature.id, feature_results_path(feature.id) %> | <%= feature.rspec_id %> | <%= feature.description %> | <%= feature.status %> | <%= feature.last_passed %>
-</div>
-
+<tr>
+  <td><%= link_to feature.rspec_id, feature_results_path(feature.id) %></td>
+  <td><%= feature.description %></td>
+  <td style="text-align:center"><%= feature.status %></td>
+  <td style="text-align:center"><%= feature.last_passed %></td>
+</tr>

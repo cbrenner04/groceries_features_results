@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   resources :features, only: :index do
     resources :results, only: :index
   end
+  resources :test_runs, only: %i[index show]
   root to: 'home#show'
 end

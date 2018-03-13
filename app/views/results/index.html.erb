@@ -1,1 +1,17 @@
-<%= render @results %>
+<h1>Results</h1>
+<%= link_to "Back to Features", features_path %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Duration</th>
+      <th>Exception</th>
+      <th>Passed?</th>
+      <th>Environment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @results %>
+  </tbody>
+</table>
