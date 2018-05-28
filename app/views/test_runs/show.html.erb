@@ -1,9 +1,10 @@
 <h1>Test results for <%= params[:id] %></h1>
 <%= link_to "Back to Test Runs", test_runs_path %>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
+      <th>RSpec ID</th>
       <th>Timestamp</th>
       <th>Duration</th>
       <th>Exception</th>
@@ -13,7 +14,14 @@
   </thead>
   <tbody>
     <% @test_run_results.each do |result| %>
-      <%= render "results/result", result: result %>
+      <tr>
+        <td><%= link_to result.feature.rspec_id, feature_results_path(result.feature.id) %></td>
+        <td style="text-align:center"><%= result.created_at.to_formatted_s(:long) %></td>
+        <td style="text-align:center"><%= result.duration %></td>
+        <td style="text-align:center"><%= result.exception || 'N/A' %></td>
+        <td style="text-align:center"><%= result.passed %></td>
+        <td style="text-align:center"><%= result.environment %></td>
+      </tr>
     <% end %>
   </tbody>
 </table>

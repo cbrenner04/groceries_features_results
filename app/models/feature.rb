@@ -7,11 +7,11 @@ class Feature < ApplicationRecord
   validates :rspec_id, :description, presence: true
 
   def status
-    results.last.passed ? 'passing' : 'failing'
+    results.first.passed ? 'passing' : 'failing'
   end
 
   def last_passed
-    last_passing = results.passing.last
+    last_passing = results.passing.first
     last_passing ? last_passing.created_at.to_formatted_s(:long) : 'n/a'
   end
 end
