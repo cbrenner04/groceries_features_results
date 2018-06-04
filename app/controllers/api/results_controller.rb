@@ -16,8 +16,9 @@ module Api
     private
 
     def result_params
-      params.require(:result)
-            .permit(:feature_id, :duration, :exception, :passed, :test_run)
+      params.require(:result).permit(
+        :feature_id, :duration, :exception, :environment, :passed, :test_run
+      )
     end
 
     def invalid_result_creation
