@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.12', '>= 3.12.6'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
