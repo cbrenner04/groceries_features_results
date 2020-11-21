@@ -7,6 +7,7 @@ class TestRunsController < ApplicationController
   end
 
   def show
-    @test_run_results = Result.test_run(params[:id])
+    time = params[:id].to_datetime.strftime('%s')
+    @test_run_results = Result.test_run(time)
   end
 end

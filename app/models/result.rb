@@ -12,6 +12,6 @@ class Result < ApplicationRecord
   scope :test_run, ->(test_run) { where(test_run: test_run) }
 
   def self.test_runs
-    pluck(:test_run).uniq
+    pluck(:test_run).uniq.map { |time| Time.at(time.to_i)}
   end
 end
