@@ -12,7 +12,7 @@ gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'pg', '~> 1.0'
 gem 'puma', '~> 5.0', '>= 5.0.4'
-gem 'rails', '~> 6.0.3.0', '>= 6.0.3.4'
+gem 'rails', '~> 6.1.0', '>= 6.1.1'
 gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
@@ -23,7 +23,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.5'
-  gem 'rubocop', '~> 1.3.0'
+  gem 'rubocop', '~> 1.9.0'
   gem 'spring', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.1'
   gem 'web-console', '>= 3.7.0'
