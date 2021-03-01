@@ -23,7 +23,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.5'
-  gem 'rubocop', '~> 1.9.0'
+  gem 'rubocop', '~> 1.11.0'
   gem 'spring', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.1'
   gem 'web-console', '>= 3.7.0'
