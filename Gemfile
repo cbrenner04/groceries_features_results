@@ -11,7 +11,7 @@ gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'pg', '~> 1.0'
-gem 'puma', '~> 5.0', '>= 5.0.4'
+gem 'puma', '~> 5.3', '>= 5.3.1'
 gem 'rails', '~> 6.1', '>= 6.1.3.2'
 gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
@@ -23,7 +23,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.6'
-  gem 'rubocop', '~> 1.12.0'
+  gem 'rubocop', '~> 1.15.0'
   gem 'spring', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.1'
   gem 'web-console', '>= 4.1.0'
