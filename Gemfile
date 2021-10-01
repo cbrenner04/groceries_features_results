@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
-gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'devise', '~> 4.8', '>= 4.8.0'
 gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'pg', '~> 1.0'
 gem 'puma', '~> 5.3', '>= 5.3.1'
