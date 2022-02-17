@@ -8,11 +8,11 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
-gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'devise', '~> 4.8', '>= 4.8.0'
 gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'pg', '~> 1.0'
-gem 'puma', '~> 5.3', '>= 5.3.1'
-gem 'rails', '~> 6.1', '>= 6.1.3.2'
+gem 'puma', '~> 5.6', '>= 5.6.2'
+gem 'rails', '~> 6.1', '>= 6.1.4.6'
 gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
