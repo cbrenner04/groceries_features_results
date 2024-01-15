@@ -24,7 +24,7 @@ module Api
     def invalid_result_creation
       render json: {
         errors: [{ detail: 'Error creating result' }]
-      }, status: 422
+      }, status: :unprocessable_entity
     end
   end
 end

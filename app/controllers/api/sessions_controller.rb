@@ -13,7 +13,7 @@ module Api
 
       if resource.valid_password?(login_params[:password])
         auth_token = resource.generate_auth_token
-        render json: { auth_token: auth_token }
+        render json: { auth_token: }
       else
         invalid_login_attempt
       end
@@ -34,7 +34,7 @@ module Api
     def invalid_login_attempt
       render json: {
         errors: [{ detail: 'Error with your login or password' }]
-      }, status: 401
+      }, status: :unauthorized
     end
   end
 end
