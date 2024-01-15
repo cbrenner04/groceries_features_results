@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module Api
-  # base controller for api
-  class BaseController < ApplicationController
+  # base controller for api - these are not ApplicationControllers
+  class BaseController < ActionController::Base # rubocop:disable Rails/ApplicationController
     before_action :require_login!
     helper_method :user_signed_in?, :current_user
 
