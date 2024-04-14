@@ -12,6 +12,6 @@ class Feature < ApplicationRecord
 
   def last_passed
     last_passing = results.passing.first
-    last_passing ? last_passing.created_at.to_formatted_s(:long) : 'n/a'
+    last_passing ? last_passing.created_at.to_fs(:long) : 'n/a'
   end
 end

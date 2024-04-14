@@ -22,7 +22,7 @@ module Api
     def invalid_feature_creation
       render json: {
         errors: [{ detail: 'Error creating feature' }]
-      }, status: 422
+      }, status: :unprocessable_entity
     end
   end
 end
