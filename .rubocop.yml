@@ -1,16 +1,17 @@
+require:
+  - rubocop-rails
+
 AllCops:
+  NewCops: enable
   Exclude:
     - bin/**/*
     - config/**/*
     - db/**/*
     - vendor/**/*
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 3.3
   DisplayCopNames: true
 
-Rails:
-  Enabled: true
-
-BlockLength:
+Metrics/BlockLength:
   Exclude:
     - spec/**/*
 
