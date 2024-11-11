@@ -11,7 +11,7 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'jbuilder', '~> 2.11', '>= 2.11.5'
 gem 'pg', '~> 1.5', '>= 1.5.4'
 gem 'puma', '~> 6.4', '>= 6.4.2' # major update
-gem 'rails', '~> 7.1', '>= 7.1.2' # major update
+gem 'rails', '~> 8.0', '>= 8.0.0' # major update
 gem 'sass-rails', '~> 6.0'
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 gem 'uglifier', '~> 4.2' # massive udpate
