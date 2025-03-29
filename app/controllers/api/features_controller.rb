@@ -16,7 +16,7 @@ module Api
     private
 
     def feature_params
-      params.require(:feature).permit(:rspec_id, :description)
+      params.expect(feature: %i[rspec_id description])
     end
 
     def invalid_feature_creation

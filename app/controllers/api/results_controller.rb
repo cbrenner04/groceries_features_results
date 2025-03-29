@@ -16,8 +16,8 @@ module Api
     private
 
     def result_params
-      params.require(:result).permit(
-        :feature_id, :duration, :exception, :environment, :passed, :test_run
+      params.expect(
+        result: %i[feature_id duration exception environment passed test_run]
       )
     end
 
