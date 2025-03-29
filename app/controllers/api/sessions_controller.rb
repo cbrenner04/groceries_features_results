@@ -28,7 +28,7 @@ module Api
     private
 
     def login_params
-      params.require(:user_login).permit(:email, :password)
+      params.expect(user_login: %i[email password])
     end
 
     def invalid_login_attempt
