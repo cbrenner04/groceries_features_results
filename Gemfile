@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.4.2'
+ruby '3.4.4'
 
 gem 'coffee-rails', '~> 5.0'
 gem 'devise', '~> 4.9', '>= 4.9.3'
@@ -17,7 +17,7 @@ gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 gem 'uglifier', '~> 4.2' # massive udpate
 
 group :development, :test do
-  gem 'byebug', '~> 11.1', '>= 11.1.3', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', '~> 12.0', '>= 12.0.0', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do

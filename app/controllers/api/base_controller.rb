@@ -25,7 +25,7 @@ module Api
     def authenticate_token
       authenticate_with_http_token do |token, _options|
         User.where(auth_token: token)
-            .where('token_created_at >= ?', 5.minutes.ago).first
+            .where(token_created_at: 5.minutes.ago..).first
       end
     end
   end
