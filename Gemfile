@@ -17,7 +17,7 @@ gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 gem 'uglifier', '~> 4.2' # massive udpate
 
 group :development, :test do
-  gem 'byebug', '~> 12.0', '>= 12.0.0', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', '~> 13.0', '>= 13.0.0', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
