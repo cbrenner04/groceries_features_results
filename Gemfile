@@ -7,7 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.4.8'
 
 gem 'coffee-rails', '~> 5.0'
-gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'devise', '~> 5.0', '>= 5.0.0'
 gem 'jbuilder', '~> 2.11', '>= 2.11.5'
 gem 'pg', '~> 1.5', '>= 1.5.4'
 gem 'puma', '~> 7.0', '>= 7.0.2' # major update
